@@ -12,11 +12,11 @@ public class BaseTest {
     @Steps
     protected UserSteps user;
 
-    @Managed(driver = "chrome")
-    private WebDriver driver;
+    //@Managed(uniqueSession = true)
+    //private WebDriver driver;
 
-    @Before
-    public void setupDriver() {
-        WebDriverManager.chromedriver().setup();
-    }
+    //@Before
+    //public void setupDriver() {
+        //WebDriverManager.chromedriver().setup();
+    //}
 }

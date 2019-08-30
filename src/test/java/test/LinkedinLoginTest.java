@@ -10,7 +10,6 @@ public class LinkedinLoginTest extends BaseTest {
     @Test
     public void successfulLoginTest() {
         user.openLandingPage();
-        user.logIn("mineqabox@gmail.com","qualityassurance1");
-        user.shouldBeLoggedIn();
+        user.login("mineqabox@gmail.com","qualityassurance1");
     }
 }
