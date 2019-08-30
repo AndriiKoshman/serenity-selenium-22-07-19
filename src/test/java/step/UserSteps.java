@@ -45,5 +45,10 @@ public class UserSteps extends ScenarioSteps {
         return homePage().isPageLoaded();
     }
 
+    @Step
+    public boolean isErrorMessageDisplayed(){
+        return loginPage().isErrorMessageDisplayed();
+    }
+
 }
 

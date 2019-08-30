@@ -25,6 +25,9 @@ public class LoginPage extends PageObject {
     @FindBy(xpath = "//button[@type='submit']")
     private WebElement signInButton;
 
+    @FindBy(xpath = "//div[@id='error-for-username']")
+    private WebElement errorMessage;
+
     @WhenPageOpens
     public void waitUntilTitleAppears() {
         element(userEmailField).waitUntilVisible();
@@ -40,4 +43,7 @@ public class LoginPage extends PageObject {
         return getPages().isCurrentPageAt(LoginPage.class);
     }
 
+    public boolean isErrorMessageDisplayed() {
+        return errorMessage.isDisplayed();
+    }
 }

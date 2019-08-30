@@ -151,7 +151,7 @@
                                 <include>**/test/**/${test.name}.java</include>
                             </includes>
                             <systemPropertyVariables>
-                                <webdriver.driver>opera</webdriver.driver>
+                                <webdriver.driver>chrome</webdriver.driver>
                                 <webdriver.remote.url>http://localhost:4444/wd/hub</webdriver.remote.url>
                                 <!--                                <webdriver.remote.url>http://34.220.181.94:4444/wd/hub</webdriver.remote.url>-->
                                 <serenity.driver.capabilities>enableVNC:true;enableVideo:true;sessionTimeout:2m;timeZone:America/Los_Angeles;</serenity.driver.capabilities>
@@ -186,7 +186,8 @@
                                 <include>**/test/**/${test.name}.java</include>
                             </includes>
                             <systemPropertyVariables>
-                                <!--To Do-->
+                                <webdriver.driver>chrome</webdriver.driver>
+                                <webdriver.remote.url>http://andriikoshman1:UtAbF8tA8yr9AJUrR4nd@hub-cloud.browserstack.com/wd/hub</webdriver.remote.url>
                             </systemPropertyVariables>
                         </configuration>
                         <executions>

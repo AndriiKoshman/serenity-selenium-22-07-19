@@ -36,4 +36,9 @@ public class CommonStepDefinition {
     public void thenIShouldBeOnLoginPage() {
         Assert.assertTrue("Home page is not loaded.", userSteps.isLoginPageLoaded());
     }
+
+    @Then("I should see error message")
+    public void thenErrorMessageShouldBeDisplayed() {
+        Assert.assertTrue("There is no error message displayed", userSteps.isErrorMessageDisplayed());
+    }
 }
